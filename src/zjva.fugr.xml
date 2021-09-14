@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>JVA PDC</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZJVATOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZJVA</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZJVA_MASSCHANGE_SPLITLOGIC1</FUNCNAME>
+     <SHORT_TEXT>JVA</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_SPLITSELTAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZJVA_SPLITSELTYPE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_OLDPART</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JV_PARTN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_EDATE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYDATUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PARTNERNAMES</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZJVA_PARTNERNAMESTYPE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DESCP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>LTEXT_8JF</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>IV_ALLPARTNERS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZJVA_T8JQTYPE</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>IV_SPLITTAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZJVA_SPLITTABTYPE</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_NEWSPLITTAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZJVA_NEWSPLITTYPE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_SPLITSELTAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>JVA Split Sel Tab</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_OLDPART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>JV partner</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_EDATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>System Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PARTNERNAMES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>JVA</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DESCP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Investment Group Description</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_NEWSPLITTAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Split table type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ALLPARTNERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>JVA</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_SPLITTAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>JVA Split tab table type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
